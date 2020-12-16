@@ -7,6 +7,10 @@
         "eslint",
         "eslintconfig"
     ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/tlorent/eslint-config-tlorent"
+    },
     "author": "Tim Lorent",
     "license": "MIT",
     "peerDependencies": {
