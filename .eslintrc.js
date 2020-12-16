@@ -1,0 +1,67 @@
+module.exports = {
+    root: true,
+    env: {
+        node: true,
+    },
+    parser: '@typescript-eslint/parser',
+    extends: [
+        'eslint:recommended',
+        'plugin:react/recommended',
+        'plugin:react-hooks/recommended',
+        'plugin:jsx-a11y/recommended',
+        'plugin:import/errors',
+        'plugin:import/typescript',
+        'plugin:@typescript-eslint/recommended',
+        'prettier/@typescript-eslint',
+        'prettier/react',
+        'prettier',
+    ],
+    plugins: [
+        '@typescript-eslint',
+        'react',
+        'jsx-a11y',
+        'react-hooks',
+        'import',
+    ],
+    rules: {
+        strict: 0,
+        'no-console': 'warn',
+        'no-alert': 'off',
+        quotes: ['error', 'single', { allowTemplateLiterals: true }],
+        'import/order': 'off',
+        'default-case': 'error',
+        'react/self-closing-comp': [
+            'warn',
+            {
+                component: true,
+            },
+        ],
+        'react/jsx-filename-extension': [1, { extensions: ['.ts', '.tsx'] }],
+        'react/prop-types': 'off',
+        'react/destructuring-assignment': 'off',
+        'react/jsx-key': [
+            2,
+            {
+                checkFragmentShorthand: true,
+            },
+        ],
+        'react/jsx-fragments': ['warn', 'syntax'],
+        'react/jsx-curly-brace-presence': [
+            1,
+            { props: 'never', children: 'never' },
+        ],
+        'react-hooks/rules-of-hooks': 'error',
+        'react-hooks/exhaustive-deps': 'warn', // Checks effect dependencies
+    },
+    parserOptions: {
+        sourceType: 'module',
+        ecmaFeatures: {
+            jsx: true,
+        },
+    },
+    settings: {
+        react: {
+            version: 'detect',
+        },
+    },
+};
