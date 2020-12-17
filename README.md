@@ -62,8 +62,6 @@ Add a **tsconfig.jon** file in the root of your project. You can do this with `n
 ```json
 {
     "compilerOptions": {
-        /* Visit https://aka.ms/tsconfig.json to read more about this file */
-
         "target": "es5",
         "module": "commonjs",
         "jsx": "react",
