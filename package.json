@@ -1,6 +1,6 @@
 {
     "name": "eslint-config-tlorent",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "description": "ESLint and Prettier Config from Tim Lorent",
     "main": "index.js",
     "keywords": [
