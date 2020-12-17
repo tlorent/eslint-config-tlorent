@@ -1,6 +1,7 @@
 # eslint-config-tlorent
 
 To install the peer dependencies (ESLint & TypeScript) and the necessary dependencies (ESLint plugins):
+
 `npx install-peerdeps --dev eslint-config-tlorent`
 
 ### extends
@@ -63,29 +64,20 @@ Add a **tsconfig.jon** file in the root of your project. You can do this with `n
     "compilerOptions": {
         /* Visit https://aka.ms/tsconfig.json to read more about this file */
 
-        /* Basic Options */
-        "target": "es5" /* Specify ECMAScript target version: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017', 'ES2018', 'ES2019', 'ES2020', or 'ESNEXT'. */,
-        "module": "commonjs" /* Specify module code generation: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', 'es2020', or 'ESNext'. */,
-        "jsx": "react" /* Specify JSX code generation: 'preserve', 'react-native', or 'react'. */,
-        "sourceMap": true /* Generates corresponding '.map' file. */,
-        "outDir": "./lib" /* Redirect output structure to the directory. */,
-        "noEmit": true /* Do not emit outputs. */,
-
-        /* Strict Type-Checking Options */
-        "strict": true /* Enable all strict type-checking options. */,
-        "noImplicitAny": true /* Raise error on expressions and declarations with an implied 'any' type. */,
-        "strictNullChecks": true /* Enable strict null checks. */,
-
-        /* Additional Checks */
-        "noUnusedParameters": true /* Report errors on unused parameters. */,
-        "noImplicitReturns": true /* Report error when not all code paths in function return a value. */,
-
-        /* Module Resolution Options */
-        "esModuleInterop": true /* Enables emit interoperability between CommonJS and ES Modules via creation of namespace objects for all imports. Implies 'allowSyntheticDefaultImports'. */,
-
-        /* Advanced Options */
-        "skipLibCheck": true /* Skip type checking of declaration files. */,
-        "forceConsistentCasingInFileNames": true /* Disallow inconsistently-cased references to the same file. */
+        "target": "es5",
+        "module": "commonjs",
+        "jsx": "react",
+        "sourceMap": true,
+        "outDir": "./lib",
+        "noEmit": true,
+        "strict": true,
+        "noImplicitAny": true,
+        "strictNullChecks": true,
+        "noUnusedParameters": true,
+        "noImplicitReturns": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true
     },
     "include": ["src"]
 }
